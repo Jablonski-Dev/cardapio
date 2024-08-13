@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas-HTML</title>
+</head>
+<body>
+    <h1 style="color: brown;">TABELAS HTML<h1>
+        
+        <table>
+            <tr>
+                <th>ITEM</th>
+                <th>PREÇO</th>
+                <th>QUANTIDADE</th>
+            </tr>
+
+            <tr>
+                <td>Item 1</td><!--Para formar as colunas-->
+                <td>$10</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>Item2</td>
+                <td>15$</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>TOTAL</td>
+                <td></td>
+                <td>$25</td>
+            </tr>
+        </table>
+
+        <!--Tabela com borda-->
+        <h1 style="color: blueviolet;">TABELA DE ALUNOS</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                <th>NOME</th>
+                <th>IDADE</th>
+                <th>NOTA</th>
+            </tr>
+            </thead>
+
+            <tbody> <!-- o marcador tbody é o espaço onde são colocadas as linhas dos detalhes de dados, em uma tabela HTML-->
+                <tr>
+                    <td>MAria</td>
+                    <td>18</td>
+                    <td>8.5</td>
+                </tr>
+
+                <tr><!--A etiqueta <tr> que significa table row é usada para definir uma linha -->
+                    <td>João</td>
+                    <td>20</td><!--A etiqueta <td> que significa table data é usada para definir uma célula-->
+                    <td>7.0</td>
+                </tr>
+
+                <tr>
+                    <td>Ana</td>
+                    <td>19</td>
+                    <td>9.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+            <!--Exemplo com colpsan e ROwpsan. As propriedades colpsan e rowspan são usadas nas células de uma tabela HTML para combinar varias colunas ou linhas, respectivamente. Elas são aplicadas ás tags <th> ou <td>-->
+            
+                <h1>Tabela de Horarios</h1>
+
+                <table border="2">
+                    <tr>
+                        <th colspan="3">Cabeçalho abrangendo 3 colunas</th><!--O atributo colspan serve para unir as celulas das linha-->
+                    </tr>
+                </table>
+
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                        </tr>
+                    </thead>
+
+                  <tbody>
+                    <tr>
+                        <td>08:00 - 09:00</td>
+                        <td rowspan="2">Matematica</td>
+                        <td>Português</td>
+                        <td>Historia</td>
+                        <td>Geografia</td>
+                        <td>Biologia</td>
+                    </tr>
+
+                    <tr>
+                        <td>09:00 - 10:00</td>
+                        <td>Educação fisica</td>
+                        <td>Quimica</td>
+                        <td rowspan="2">Fisica</td><!--O atributo rowspan serve para unir as células-->
+                        <td>Artes</td>
+                    </tr>
+
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>Inglês</td>
+                        <td>Educação fisica</td>
+                        <td>Quimica</td>
+                        <td rowspan="2">Matematica</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>Biologia</td>
+                        <td>Historia</td>
+                        <td>Português</td>
+                    </tr>
+                  <tbody>
+                </table>
+</body>
+</html>
